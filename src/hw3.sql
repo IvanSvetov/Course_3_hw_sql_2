@@ -1,7 +1,3 @@
-SELECT * FROM employee;
-SELECT * FROM city;
-
-
 CREATE TABLE city (
     city_id BIGSERIAL NOT NULL PRIMARY KEY,
     city_name VARCHAR(50) NOT NULL
@@ -61,3 +57,8 @@ FROM city c
 LEFT JOIN employee e ON c.city_id = e.city_id
 WHERE e.first_name IS NULL
 AND e.last_name IS NULL;
+
+SELECT * FROM employee;
+SELECT * FROM city;
+
+
